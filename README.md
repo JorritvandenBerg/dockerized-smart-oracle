@@ -18,7 +18,7 @@ Clone the Git repository. Create a copy of the file sample.secrets.env under the
 
 ``` bash
 # Go to the repository directory
-cd smart-oracle
+cd dockerized-smart-oracle
 
 # Build the Docker images
 docker-compose build
