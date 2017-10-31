@@ -1,0 +1,20 @@
+version: "3.3"
+
+services:
+    postgres:
+        image: postgres:10.0
+        env_file:
+            - ./secrets.env
+        restart: always
+
+    ethereum:
+        build: ./geth
+        env_file:
+            - ./secrets.env
+        restart: always
+
+    chainlink:
+        build: ./smartoracle
+        env_file:
+            - ./secrets.env
+        restart: always
